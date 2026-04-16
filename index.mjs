@@ -5,7 +5,7 @@ const servidor = http.createServer(async(peticion, respuesta) =>{
     try{
         await manejarRuta(peticion, respuesta)
     }
-    catch{
+    catch(error) {
         respuesta.statusCode = 500
         respuesta.end(JSON.stringify({ error: error.message }));
     }

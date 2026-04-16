@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 
-const rutaUsuarios = path.join('data', 'usuarios.json')
+const rutaUsuarios = path.join('usuarios.json')
 const api = 'https://api.escuelajs.co/api/v1/users'
 
 async function obtenerDatosApi(){
